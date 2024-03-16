@@ -52,7 +52,7 @@ namespace AssignmentXCompany.Services.Concrete
         }
 
         #region Helpers
-        private List<Product> GetInitialData()
+        public static List<Product> GetInitialData()
         {
 
             return [
