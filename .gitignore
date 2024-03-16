@@ -1,0 +1,39 @@
+# Kullanıcı özel dosyaları
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Derleme dosyaları
+bin/
+obj/
+
+# Roslyn Ön Derleme (önceden derlenmiş kod)
+*.mldb
+*.pdb
+*.dll
+*.xml
+*.json
+
+# Projeye özgü dosyalar
+*.vscode/
+.vs/
+*_i.c
+*_p.c
+*.ilk
+*.aps
+*.ncb
+*.opendb
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+
+# Resharper ve Rider için
+*.resharper
+*.resharper.user
+_ReSharper*/
+*.suo
+*.user
+*.sln.docstates
