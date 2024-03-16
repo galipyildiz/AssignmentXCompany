@@ -1,4 +1,7 @@
 
+using AssignmentXCompany.Services.Abstract;
+using AssignmentXCompany.Services.Concrete;
+
 namespace AssignmentXCompany
 {
     public class Program
@@ -8,6 +11,7 @@ namespace AssignmentXCompany
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddSingleton<IProductService, ProductService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
