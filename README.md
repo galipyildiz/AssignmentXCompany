@@ -34,3 +34,5 @@ docker run --name my-postgres-container -e POSTGRES_PASSWORD=12345 -e POSTGRES_U
 - Microsoft.AspNetCore.Authentication.JwtBearer => jwt
 
 let's begin...
+
+You can find solutions, press CTRL + F and type "Task x.x" go to solution
