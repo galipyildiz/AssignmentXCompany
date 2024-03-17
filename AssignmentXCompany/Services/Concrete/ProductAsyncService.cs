@@ -29,7 +29,7 @@ namespace AssignmentXCompany.Services.Concrete
             return true;
         }
 
-        public async Task<bool> TryDeleteProduct(int productId)
+        public async Task<bool> TryDeleteProductAsync(int productId)
         {
             //This awaiting code may be sql op. this is just simulated
 
@@ -49,7 +49,7 @@ namespace AssignmentXCompany.Services.Concrete
             return result;
         }
 
-        public async Task<bool> TryUpdateProduct(Product productNew)
+        public async Task<bool> TryUpdateProductAsync(Product productNew)
         {
             //This awaiting code may be sql op. this is just simulated
 

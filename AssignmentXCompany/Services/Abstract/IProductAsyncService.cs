@@ -7,7 +7,7 @@ namespace AssignmentXCompany.Services.Abstract
         Task<List<Product>> GetProductsAsync();
         Task<Product?> TryGetProductByIdAsync(int productId);
         Task<bool> TryAddProductAsync(Product product);
-        Task<bool> TryUpdateProduct(Product product);
-        Task<bool> TryDeleteProduct(int productId);
+        Task<bool> TryUpdateProductAsync(Product product);
+        Task<bool> TryDeleteProductAsync(int productId);
     }
 }

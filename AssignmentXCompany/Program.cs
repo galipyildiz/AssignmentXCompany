@@ -20,6 +20,7 @@ namespace AssignmentXCompany
             #endregion
 
             builder.Services.AddSingleton<IProductService, ProductService>();
+            builder.Services.AddScoped<IProductAsyncService, ProductFromSQLService>();
             builder.Services.AddHostedService<DataInitializerBackgroundService>();
 
             builder.Services.AddControllers();

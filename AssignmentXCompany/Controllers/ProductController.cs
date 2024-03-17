@@ -54,7 +54,6 @@ namespace AssignmentXCompany.Controllers
         }
 
         [HttpDelete]
-        [Route("/{productId}")]
         public IActionResult DeleteProduct(int productId)
         {
             var isSuccess = _productService.TryDeleteProduct(productId);
