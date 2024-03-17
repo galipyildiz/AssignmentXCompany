@@ -29,5 +29,6 @@ docker run --name my-postgres-container -e POSTGRES_PASSWORD=12345 -e POSTGRES_U
   dotnet ef migrations add InitialCreate
   dotnet ef database update
   ```
+- Microsoft.AspNetCore.Authentication.JwtBearer => jwt
 
 let's begin...

@@ -1,10 +1,12 @@
 ﻿using AssignmentXCompany.Models;
 using AssignmentXCompany.Services.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AssignmentXCompany.Controllers
 {
+    [Authorize] //Task 3.2
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class ProductSqlController : ControllerBase
