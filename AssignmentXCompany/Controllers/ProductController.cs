@@ -9,6 +9,7 @@ namespace AssignmentXCompany.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
+        //Task 2.1
         private readonly IProductService _productService;
 
         public ProductController(IProductService productService)

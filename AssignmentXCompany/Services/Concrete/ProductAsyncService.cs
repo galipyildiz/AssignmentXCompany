@@ -5,6 +5,7 @@ namespace AssignmentXCompany.Services.Concrete
 {
     public class ProductAsyncService : IProductAsyncService
     {
+        //Task 2.2
         private readonly List<Product> _products;
         public ProductAsyncService()
         {

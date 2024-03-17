@@ -12,6 +12,7 @@ namespace AssignmentXCompany.Controllers
         [Route("/")]
         public IActionResult Get()
         {
+            //Task 1.1
             return Ok("Hello World!");
         }
 
@@ -20,6 +21,7 @@ namespace AssignmentXCompany.Controllers
         {
             try
             {
+                //Task 1.2
                 var result = BasicService.Avarage(numbers);
                 return Ok($"Result: {result:N2}");
             }

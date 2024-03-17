@@ -5,6 +5,7 @@ namespace AssignmentXCompany.Services.Concrete
 {
     public class DataInitializerBackgroundService : BackgroundService
     {
+        //Task 3.1
         private readonly IServiceProvider _serviceProvider;
 
         public DataInitializerBackgroundService(IServiceProvider serviceProvider)

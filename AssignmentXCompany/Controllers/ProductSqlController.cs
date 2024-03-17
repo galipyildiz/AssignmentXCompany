@@ -9,6 +9,7 @@ namespace AssignmentXCompany.Controllers
     [ApiController]
     public class ProductSqlController : ControllerBase
     {
+        //Task 3.1
         private readonly IProductAsyncService _productAsyncService;
 
         public ProductSqlController(IProductAsyncService productAsyncService)
