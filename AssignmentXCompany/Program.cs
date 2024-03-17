@@ -16,6 +16,8 @@ namespace AssignmentXCompany
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            //Task 5.1
+
             // Add services to the container.
             #region postgres
             builder.Services.AddDbContext<AppDbContext>(options =>
