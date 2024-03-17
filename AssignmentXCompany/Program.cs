@@ -20,6 +20,7 @@ namespace AssignmentXCompany
             #endregion
 
             builder.Services.AddSingleton<IProductService, ProductService>();
+            builder.Services.AddHostedService<DataInitializerBackgroundService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
