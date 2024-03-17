@@ -1,5 +1,7 @@
 # Assignment
 
+I choose implement part1,part2,part3,part5
+
 ### Setup
 
 - install .net 8 sdk =>https://dotnet.microsoft.com/en-us/download/dotnet/8.0
