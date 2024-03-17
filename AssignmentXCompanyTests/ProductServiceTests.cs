@@ -7,6 +7,7 @@ namespace AssignmentXCompanyTests
 {
     public class ProductServiceTests
     {
+        //Task 5.2
         private DbContextOptions<AppDbContext> _dbContextOptions;
         private AppDbContext _dbContext;
         private ProductFromSQLService _productService;
@@ -69,7 +70,7 @@ namespace AssignmentXCompanyTests
             var result = await _productService.TryAddProductAsync(product);
 
             Assert.IsTrue(result);
-            Assert.AreEqual(3, _dbContext.Products.Count()); 
+            Assert.AreEqual(3, _dbContext.Products.Count());
         }
 
         private void SeedTestData()
