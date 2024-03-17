@@ -1,5 +1,6 @@
 
 using AssignmentXCompany.Data;
+using AssignmentXCompany.Middlewares;
 using AssignmentXCompany.Services.Abstract;
 using AssignmentXCompany.Services.Concrete;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -26,6 +27,7 @@ namespace AssignmentXCompany
             builder.Services.AddScoped<IProductAsyncService, ProductFromSQLService>();
             builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddHostedService<DataInitializerBackgroundService>();
+            builder.Services.AddScoped<GlobalErrorHandlerMiddleware>();
 
             #region jwt
             builder.Services.AddAuthentication(options =>
@@ -67,6 +69,8 @@ namespace AssignmentXCompany
             app.UseAuthorization();
 
             app.MapControllers();
+
+            app.UseGlobalErrorHandler();
 
             app.Run();
         }

@@ -20,5 +20,11 @@ namespace AssignmentXCompany.Controllers
             var token = _authService.CreateToken();
             return Ok(token);
         }
+
+        [HttpGet]
+        public IActionResult ThrowException()
+        {
+            throw new Exception("for test GlobalErrorHandlerMiddleware");
+        }
     }
 }
