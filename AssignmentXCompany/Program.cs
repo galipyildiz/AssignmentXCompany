@@ -1,6 +1,8 @@
 
+using AssignmentXCompany.Data;
 using AssignmentXCompany.Services.Abstract;
 using AssignmentXCompany.Services.Concrete;
+using Microsoft.EntityFrameworkCore;
 
 namespace AssignmentXCompany
 {
@@ -11,6 +13,12 @@ namespace AssignmentXCompany
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            #region postgres
+            builder.Services.AddDbContext<AppDbContext>(options =>
+                options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
+            );
+            #endregion
+
             builder.Services.AddSingleton<IProductService, ProductService>();
 
             builder.Services.AddControllers();
