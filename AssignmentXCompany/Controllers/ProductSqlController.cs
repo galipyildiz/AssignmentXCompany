@@ -1,7 +1,6 @@
 ﻿using AssignmentXCompany.Models;
 using AssignmentXCompany.Services.Abstract;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AssignmentXCompany.Controllers
